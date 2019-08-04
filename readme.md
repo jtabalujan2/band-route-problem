@@ -39,7 +39,7 @@ Current Method:
     3. Repeat until at last point
     4. Go back to the first vertex 
 
-    ### Issues: This is great as the solution is faster than other solutions like a brute force, but does not find the most optimal solution. 
+    ### Issues: This is great as the solution is faster than other solutions like a brute force, but sometimes does not find the most optimal  solution. 
         For example: Node A to B and B to C  and C to D are the shortest in relation to each other, but the sum distance from A to B to C  to D could be more optimal given another path. 
 
 Time Tracking:
