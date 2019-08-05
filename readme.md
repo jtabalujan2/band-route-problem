@@ -43,9 +43,11 @@ Current Method:
         For example: Node A to B and B to C  and C to D are the shortest in relation to each other, but the sum distance from A to B to C  to D could be more optimal given another path. 
 
 Time Tracking:
-1 1/2 Hours = First Commit
+1.5 Hours = First Commit
     - Algorithm / Problem look up
     - Brainstorming approach
     - Setting up files and understanding mathjs library
+1.5 Hours = Second Commit
+    - Finished algorithm
 
 ### Fill in comments, external tool usage, and time tracking
