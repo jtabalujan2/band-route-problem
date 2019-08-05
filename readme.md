@@ -30,7 +30,7 @@ If you have questions on the challenge, please contact Jared Sartin: jared@leftf
 
 Libraries Used:
 - MathJS = Helps calculate Eucliptian distance between two vertex's
-- SigmaJS = Helps render the actual path of the coordinates and helps vizualize it
+- ChartJS = Helps render the actual path of the coordinates and helps vizualize it
 
 Current Method:
 - Nearest Neighbor Method
@@ -43,11 +43,46 @@ Current Method:
         For example: Node A to B and B to C  and C to D are the shortest in relation to each other, but the sum distance from A to B to C  to D could be more optimal given another path. 
 
 Time Tracking:
-1.5 Hours = First Commit
+- 1.5 Hours = First Commit
     - Algorithm / Problem look up
     - Brainstorming approach
     - Setting up files and understanding mathjs library
-1.5 Hours = Second Commit
+- 1.5 Hours = Second Commit
     - Finished algorithm
+- 1 Hour = Third Commit
+    - Implemented basic graph to display data
+    - Finish documentation and notes in code
+
+
+How to Use:
+- Clone repo: 
+  ```
+  git clone https://github.com/jtabalujan2/band-route-problem.git
+  ```
+- Install dependencies:
+  ```
+  npm install 
+  ```
+- Run using node: (Available datasets can be changed by changing line )
+  ```
+  npm run start
+  ```
+- Open up localhost:3000
+- To change data set:
+  ```
+  Change the data set you'd like to use from src/data.js
+  Make change in algo.js -> Line 60
+      - findShortestPath(data.points40))
+      - findShortestPath(data.points200))
+      - findShortestPath(data.points500))
+  node algo.js
+  ```
+
+  To-do: (Things I didn't get to accomplish due to time-limit)
+  - Render table listing the locations in order
+  - Style the website 
+  - Add labels to the first and last point on the graph
+  - Add buttons to display the different data points and call the function so you do not need to change dataset manually
+
 
 ### Fill in comments, external tool usage, and time tracking

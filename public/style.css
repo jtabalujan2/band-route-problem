@@ -1,0 +1,12 @@
+.centered { 
+  text-align: center
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  width: 200px;
+}

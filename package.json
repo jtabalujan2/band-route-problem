@@ -1,0 +1,25 @@
+{
+  "name": "band-route-problem",
+  "version": "1.0.0",
+  "description": "The year is 2092. A budding young vocalist and his band have just enough money to buy a hovercar and begin their tour. They have struck deals with multiple venues and can set their own tour schedule, any venue in any order. Can you help them find the shortest route to take to hit all cities to maximize their fuel budget?",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mathjs": "^6.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtabalujan2/band-route-problem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtabalujan2/band-route-problem/issues"
+  },
+  "homepage": "https://github.com/jtabalujan2/band-route-problem#readme"
+}

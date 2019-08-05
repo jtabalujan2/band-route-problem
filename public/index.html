@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>LeftField Punk Tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- <script src="./index.js"></script> -->
+</head>
+
+<body class="">
+
+  <h1 class="title is-1 centered">LeftField Punk Tour</h1>
+  <div class="parent">
+    <canvas id="myChart" class="centered" width="1000vw" height="1000vh"></canvas>
+    <h4 id="path"></h4>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+  <script src="./path.js">
+  </script>
+  <script>
+
+
+    const ctx = document.getElementById("myChart");
+    const chartData = chart
+    const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        datasets: [{
+          label: 'Path to Shows',
+          data: chartData,
+          "fill": false,
+          "borderColor": "rgb(75, 192, 192)",
+          "lineTension": 0.1,
+          "pointBackgroundColor": "rgb(75, 192, 192)",
+        }]
+      },
+      options: {
+        responsive: false,
+        scales: {
+          xAxes: [{
+            type: 'linear',
+            position: 'bottom'
+          }]
+        }
+      }
+    });</script>
+
+</body>
+<link rel="stylesheet" href="./style.css">
+
+</html>
