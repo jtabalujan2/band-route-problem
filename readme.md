@@ -50,8 +50,14 @@ Time Tracking:
 - 1.5 Hours = Second Commit
     - Finished algorithm
 - 1 Hour = Third Commit
+    - Included Express for setup of static files
     - Implemented basic graph to display data
     - Finish documentation and notes in code
+- 4/5 Hours = Fourth Commit
+    - Styled CSS and created landing page in HTML
+    - Created mockup on photohsop (see png in root)
+    - Created logo and theme for band
+    - Able to render 3 different data points, just switch 
 
 
 How to Use:
@@ -70,19 +76,19 @@ How to Use:
 - Open up localhost:3000
 - To change data set:
   ```
-  Change the data set you'd like to use from src/data.js
-  Make change in algo.js -> Line 60
-      - findShortestPath(data.points40))
-      - findShortestPath(data.points200))
-      - findShortestPath(data.points500))
-  node algo.js
+  label: "City: ",
+  data: (select between chartData0/chartData1/chartData2), 
+
+  or 
+
+
   ```
 
   To-do: (Things I didn't get to accomplish due to time-limit)
   - Render table listing the locations in order
-  - Style the website 
+  - Style the website (Done)
   - Add labels to the first and last point on the graph
-  - Add buttons to display the different data points and call the function so you do not need to change dataset manually
+  - Add buttons to display the different data points and call the function so you do not need to change dataset manually 
 
 
 ### Fill in comments, external tool usage, and time tracking

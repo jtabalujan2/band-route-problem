@@ -4,36 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <title>LeftField Punk Tour</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
   <!-- <script src="./index.js"></script> -->
 </head>
 
-<body class="">
+<body class="bg">
 
-  <h1 class="title is-1 centered">LeftField Punk Tour</h1>
-  <div class="parent">
-    <canvas id="myChart" class="centered" width="1000vw" height="1000vh"></canvas>
-    <h4 id="path"></h4>
-  </div>
+  <nav class="navbar" id="mainNav">
+    <div class="">
+      <ul class="navbar-nav">
+        <li class="nav-link" id="home">
+          <a id="" href="#page-top">Home</a>
+        </li>
+        <li class="nav-link">
+          <a id="tour" href="#tour">Tour</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+
+  </section>
+
+  <main>
+    <section class="header"></section>
+    <div class="parent container">
+      <div class="chart" href="#tour">
+        <canvas id="myChart" class="centered canvas" style="width: 80vh; height: 80vh;"></canvas>
+        <h4 id="path"></h4>
+      </div>
+    </div>
+  </main>
+
+
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-  <script src="./path.js">
-  </script>
+  <script src="./path0.js"></script>
+  <script src="./path1.js"></script>
+  <script src="./path2.js"></script>
+
   <script>
 
 
     const ctx = document.getElementById("myChart");
-    const chartData = chart
+    const chartData0 = chart0
+    const chartData1 = chart1
+    const chartData2 = chart2
     const myChart = new Chart(ctx, {
       type: 'line',
       data: {
         datasets: [{
-          label: 'Path to Shows',
-          data: chartData,
+          label: "City: ",
+          data: chartData0,
           "fill": false,
           "borderColor": "rgb(75, 192, 192)",
           "lineTension": 0.1,
@@ -42,6 +70,7 @@
       },
       options: {
         responsive: false,
+        maintainAspectRatio: false,
         scales: {
           xAxes: [{
             type: 'linear',
@@ -52,6 +81,6 @@
     });</script>
 
 </body>
-<link rel="stylesheet" href="./style.css">
+
 
 </html>

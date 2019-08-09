@@ -1,5 +1,5 @@
 const math = require('mathjs')
-const data = require('./src/data');
+const data = require('./data');
 const fs = require('fs')
 
 function getClosestLocation(startingNode, availableLocationsArr) {
@@ -52,18 +52,25 @@ function findShortestPath(arrOfLocations) {
   return arrOfPath
 }
 
+// console.log(data.points[0])
 
 
-fs.writeFile(
-  '../public/path.js',
-  'const chart = ' + JSON.stringify(
-    findShortestPath(data.points40)
-  ),
-  (err) => {
-    if (err) console.log(err)
-    console.log('File written')
-  }
-)
+for (let index = 0; index < data.points.length; index++) {
+
+  fs.writeFile(
+    `../public/path${index}.js`,
+    `const chart${index} = ` + JSON.stringify(
+      findShortestPath(data.points[index])
+    ),
+    (err) => {
+      if (err) console.log(err)
+      console.log('File written')
+    }
+  )
+}
+
+
+
 // console.log(findShortestPath(data.points5))
 
 // getClosestLocation(data.points20[0], data.points20.slice(1))
